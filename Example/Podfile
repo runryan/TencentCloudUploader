@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TencentCloudUploader_Example' do
+  pod 'TencentCloudUploader', :path => '../'
+
+  target 'TencentCloudUploader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
