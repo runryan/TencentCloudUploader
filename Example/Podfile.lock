@@ -1,0 +1,37 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - TencentCloudUploader (0.1.0):
+    - AFNetworking
+
+DEPENDENCIES:
+  - TencentCloudUploader (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+
+EXTERNAL SOURCES:
+  TencentCloudUploader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  TencentCloudUploader: 88dd31a9157e45a749daaadcfd8c95db1f185b5d
+
+PODFILE CHECKSUM: 6b3bae06b25c3374395d62d9616ef1ab25ed3e35
+
+COCOAPODS: 1.8.3

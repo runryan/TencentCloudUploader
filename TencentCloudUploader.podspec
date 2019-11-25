@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TencentCloudUploader'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TencentCloudUploader.'
+  s.version          = '0.0.1'
+  s.summary          = '腾讯云点播文件上传SDK'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,26 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+腾讯云点播文件上传SDK封装，可替换官网手动配置SDK。
                        DESC
 
-  s.homepage         = 'https://github.com/ryan/TencentCloudUploader'
+  s.homepage         = 'https://github.com/runryan/TencentCloudUploader'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ryan' => 'mob_developer@163.com' }
-  s.source           = { :git => 'https://github.com/ryan/TencentCloudUploader.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/runryan/TencentCloudUploader.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'TencentCloudUploader/Classes/**/*'
-  
   # s.resource_bundles = {
   #   'TencentCloudUploader' => ['TencentCloudUploader/Assets/*.png']
   # }
-
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
+  s.vendored_frameworks = 'TencentCloudUploader/libs/QCloudCore.framework', 'TencentCloudUploader/libs/QCloudCOSXML.framework'
+  s.vendored_libraries = 'TencentCloudUploader/libs/libmtasdk.a'
+  s.frameworks = 'CoreTelephony', 'Foundation', 'SystemConfiguration'
+  s.libraries = 'c++'
+  s.dependency 'AFNetworking'
+  # s.module_map = 'TencentCloudUploader/module.modulemap'
 end

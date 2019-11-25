@@ -1,0 +1,6 @@
+module TencentCloudUploader {
+  umbrella header "TencentCloudUploader-umbrella.h"
+
+  export *
+  module * { export * }
+}

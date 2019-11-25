@@ -1,5 +1,5 @@
 import XCTest
-import TencentCloudUploader
+import TencentCloudUploaderExample
 
 class Tests: XCTestCase {
     

@@ -1,0 +1,12 @@
+ramework module TencentCloudUploader {
+	umbrella header "TencentCloudUploader.h"
+
+	export *
+	module * { export * }
+
+	// explicit module Private {
+	//	header "RLMArray_Private.h"
+	//	header "RLMObject_Private.h"
+	//	// ...
+	// }
+}

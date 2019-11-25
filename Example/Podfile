@@ -1,11 +1,10 @@
-use_frameworks!
+platform :ios, '9.0'
 
-target 'TencentCloudUploader_Example' do
-  pod 'TencentCloudUploader', :path => '../'
+target 'TencentCloudUploaderExample' do
+ use_modular_headers!
+ pod 'TencentCloudUploader', :path => '../'
 
-  target 'TencentCloudUploader_Tests' do
+  target 'TencentCloudUploaderExampleTests' do
     inherit! :search_paths
-
-    
   end
 end

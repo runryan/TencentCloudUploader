@@ -1,22 +1,15 @@
 # TencentCloudUploader
 
-[![CI Status](https://img.shields.io/travis/ryan/TencentCloudUploader.svg?style=flat)](https://travis-ci.org/ryan/TencentCloudUploader)
-[![Version](https://img.shields.io/cocoapods/v/TencentCloudUploader.svg?style=flat)](https://cocoapods.org/pods/TencentCloudUploader)
-[![License](https://img.shields.io/cocoapods/l/TencentCloudUploader.svg?style=flat)](https://cocoapods.org/pods/TencentCloudUploader)
-[![Platform](https://img.shields.io/cocoapods/p/TencentCloudUploader.svg?style=flat)](https://cocoapods.org/pods/TencentCloudUploader)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+腾讯云点播官方文档在介绍[视频上传库](https://cloud.tencent.com/document/product/266/13793)时，仅仅提供了手动集成SDK的方式，没有提供cocoapods的集成方式，这就是`TencentCloudUploader`的作用。
 
 ## Requirements
 
-## Installation
+iOS 8.0
 
-TencentCloudUploader is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+## 安装
 
 ```ruby
+use_modular_headers!
 pod 'TencentCloudUploader'
 ```
 
