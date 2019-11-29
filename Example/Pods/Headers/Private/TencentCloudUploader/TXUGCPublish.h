@@ -1,1 +1,0 @@
-../../../../../TencentCloudUploader/Classes/TXUGCPublish.h

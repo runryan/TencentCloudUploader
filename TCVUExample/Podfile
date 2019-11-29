@@ -1,0 +1,10 @@
+platform :ios, '9.0'
+
+target 'TCVUExample' do
+  use_modular_headers!
+  # Pods for TCVUExample
+    pod 'TencentCloudVideoUploader', :path => '../'
+    pod 'SwiftCommonTools2', '0.0.6'
+
+end
+ 

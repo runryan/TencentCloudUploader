@@ -1,1 +1,0 @@
-../../../Target Support Files/TencentCloudUploader/TencentCloudUploader-umbrella.h

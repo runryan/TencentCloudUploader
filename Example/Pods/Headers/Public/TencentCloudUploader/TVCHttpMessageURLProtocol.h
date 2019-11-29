@@ -1,1 +1,0 @@
-../../../../../TencentCloudUploader/Classes/TVCHttpMessageURLProtocol.h

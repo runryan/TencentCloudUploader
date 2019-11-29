@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D6D7E7A28AB62321F0D7AD8 /* libPods-TCVUExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C23304DA45E48DBF9F67DCE /* libPods-TCVUExample.a */; };
+		9419AF912391030D003CEE45 /* ice_age.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9419AF902390F8B3003CEE45 /* ice_age.mp4 */; };
+		9419AF9423910627003CEE45 /* PlayCloudVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419AF9223910627003CEE45 /* PlayCloudVideoViewController.swift */; };
+		9419AF9523910627003CEE45 /* PlayCloudVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9419AF9323910627003CEE45 /* PlayCloudVideoViewController.xib */; };
+		9419AF9723910891003CEE45 /* Secrects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9419AF9623910891003CEE45 /* Secrects.swift */; };
+		94B21DFD238FF783006678EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B21DFC238FF783006678EC /* AppDelegate.swift */; };
+		94B21DFF238FF783006678EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B21DFE238FF783006678EC /* SceneDelegate.swift */; };
+		94B21E01238FF783006678EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B21E00238FF783006678EC /* ViewController.swift */; };
+		94B21E04238FF783006678EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B21E02238FF783006678EC /* Main.storyboard */; };
+		94B21E06238FF783006678EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B21E05238FF783006678EC /* Assets.xcassets */; };
+		94B21E09238FF783006678EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B21E07238FF783006678EC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C23304DA45E48DBF9F67DCE /* libPods-TCVUExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCVUExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60BD929C5EE94B876A78749D /* Pods-TCVUExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCVUExample.release.xcconfig"; path = "Target Support Files/Pods-TCVUExample/Pods-TCVUExample.release.xcconfig"; sourceTree = "<group>"; };
+		9419AF902390F8B3003CEE45 /* ice_age.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ice_age.mp4; sourceTree = "<group>"; };
+		9419AF9223910627003CEE45 /* PlayCloudVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCloudVideoViewController.swift; sourceTree = "<group>"; };
+		9419AF9323910627003CEE45 /* PlayCloudVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayCloudVideoViewController.xib; sourceTree = "<group>"; };
+		9419AF9623910891003CEE45 /* Secrects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrects.swift; sourceTree = "<group>"; };
+		94B21DF9238FF783006678EC /* TCVUExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCVUExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B21DFC238FF783006678EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94B21DFE238FF783006678EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		94B21E00238FF783006678EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94B21E03238FF783006678EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94B21E05238FF783006678EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94B21E08238FF783006678EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94B21E0A238FF783006678EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94B21E10238FFB30006678EC /* TCVUExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TCVUExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF637985E6F7F5FE1C6B69EC /* Pods-TCVUExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCVUExample.debug.xcconfig"; path = "Target Support Files/Pods-TCVUExample/Pods-TCVUExample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94B21DF6238FF783006678EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6D7E7A28AB62321F0D7AD8 /* libPods-TCVUExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8087A7EB11624AADC72312D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF637985E6F7F5FE1C6B69EC /* Pods-TCVUExample.debug.xcconfig */,
+				60BD929C5EE94B876A78749D /* Pods-TCVUExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		94B21DF0238FF783006678EC = {
+			isa = PBXGroup;
+			children = (
+				94B21E10238FFB30006678EC /* TCVUExample-Bridging-Header.h */,
+				94B21DFB238FF783006678EC /* TCVUExample */,
+				94B21DFA238FF783006678EC /* Products */,
+				8087A7EB11624AADC72312D9 /* Pods */,
+				98B85B2A014485995DF000F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		94B21DFA238FF783006678EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94B21DF9238FF783006678EC /* TCVUExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94B21DFB238FF783006678EC /* TCVUExample */ = {
+			isa = PBXGroup;
+			children = (
+				9419AF902390F8B3003CEE45 /* ice_age.mp4 */,
+				94B21DFC238FF783006678EC /* AppDelegate.swift */,
+				94B21DFE238FF783006678EC /* SceneDelegate.swift */,
+				94B21E00238FF783006678EC /* ViewController.swift */,
+				94B21E02238FF783006678EC /* Main.storyboard */,
+				94B21E05238FF783006678EC /* Assets.xcassets */,
+				94B21E07238FF783006678EC /* LaunchScreen.storyboard */,
+				94B21E0A238FF783006678EC /* Info.plist */,
+				9419AF9223910627003CEE45 /* PlayCloudVideoViewController.swift */,
+				9419AF9323910627003CEE45 /* PlayCloudVideoViewController.xib */,
+				9419AF9623910891003CEE45 /* Secrects.swift */,
+			);
+			path = TCVUExample;
+			sourceTree = "<group>";
+		};
+		98B85B2A014485995DF000F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C23304DA45E48DBF9F67DCE /* libPods-TCVUExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94B21DF8238FF783006678EC /* TCVUExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94B21E0D238FF783006678EC /* Build configuration list for PBXNativeTarget "TCVUExample" */;
+			buildPhases = (
+				90338BF7EDF8E3111E8A153C /* [CP] Check Pods Manifest.lock */,
+				94B21DF5238FF783006678EC /* Sources */,
+				94B21DF6238FF783006678EC /* Frameworks */,
+				94B21DF7238FF783006678EC /* Resources */,
+				F842945DCECE99A39B211DB7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCVUExample;
+			productName = TCVUExample;
+			productReference = 94B21DF9238FF783006678EC /* TCVUExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94B21DF1238FF783006678EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = windbird;
+				TargetAttributes = {
+					94B21DF8238FF783006678EC = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 94B21DF4238FF783006678EC /* Build configuration list for PBXProject "TCVUExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94B21DF0238FF783006678EC;
+			productRefGroup = 94B21DFA238FF783006678EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94B21DF8238FF783006678EC /* TCVUExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94B21DF7238FF783006678EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B21E09238FF783006678EC /* LaunchScreen.storyboard in Resources */,
+				9419AF9523910627003CEE45 /* PlayCloudVideoViewController.xib in Resources */,
+				94B21E06238FF783006678EC /* Assets.xcassets in Resources */,
+				94B21E04238FF783006678EC /* Main.storyboard in Resources */,
+				9419AF912391030D003CEE45 /* ice_age.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90338BF7EDF8E3111E8A153C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCVUExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F842945DCECE99A39B211DB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCVUExample/Pods-TCVUExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCVUExample/Pods-TCVUExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCVUExample/Pods-TCVUExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94B21DF5238FF783006678EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9419AF9723910891003CEE45 /* Secrects.swift in Sources */,
+				9419AF9423910627003CEE45 /* PlayCloudVideoViewController.swift in Sources */,
+				94B21E01238FF783006678EC /* ViewController.swift in Sources */,
+				94B21DFD238FF783006678EC /* AppDelegate.swift in Sources */,
+				94B21DFF238FF783006678EC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		94B21E02238FF783006678EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94B21E03238FF783006678EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94B21E07238FF783006678EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94B21E08238FF783006678EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94B21E0B238FF783006678EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94B21E0C238FF783006678EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94B21E0E238FF783006678EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF637985E6F7F5FE1C6B69EC /* Pods-TCVUExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWP5MRJALD;
+				INFOPLIST_FILE = TCVUExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = info.windbird.TCVUExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/TCVUExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94B21E0F238FF783006678EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60BD929C5EE94B876A78749D /* Pods-TCVUExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWP5MRJALD;
+				INFOPLIST_FILE = TCVUExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = info.windbird.TCVUExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/TCVUExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94B21DF4238FF783006678EC /* Build configuration list for PBXProject "TCVUExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94B21E0B238FF783006678EC /* Debug */,
+				94B21E0C238FF783006678EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94B21E0D238FF783006678EC /* Build configuration list for PBXNativeTarget "TCVUExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94B21E0E238FF783006678EC /* Debug */,
+				94B21E0F238FF783006678EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94B21DF1238FF783006678EC /* Project object */;
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5uE-qk-wUB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TCVUExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cq5-CY-y9G">
+                                <rect key="frame" x="176" y="433" width="62" height="30"/>
+                                <state key="normal" title="上传视频"/>
+                                <connections>
+                                    <action selector="didClickUploadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OhU-g4-JQ6"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPo-IJ-zdM">
+                                <rect key="frame" x="145" y="369" width="124.5" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传进度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUP-ee-r7m">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLj-CQ-r8P">
+                                        <rect key="frame" x="87" y="0.0" width="37.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0E-5v-qQt">
+                                <rect key="frame" x="176" y="493" width="62" height="30"/>
+                                <state key="normal" title="播放视频"/>
+                                <connections>
+                                    <action selector="didClickPlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fye-zH-u43"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Q0E-5v-qQt" firstAttribute="top" secondItem="cq5-CY-y9G" secondAttribute="bottom" constant="30" id="3W2-kW-hyf"/>
+                            <constraint firstItem="cq5-CY-y9G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7vv-B8-JgQ"/>
+                            <constraint firstItem="cq5-CY-y9G" firstAttribute="top" secondItem="JPo-IJ-zdM" secondAttribute="bottom" constant="35" id="GXD-ie-HJO"/>
+                            <constraint firstItem="cq5-CY-y9G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hf0-j7-rIo"/>
+                            <constraint firstItem="JPo-IJ-zdM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ou0-CI-mQk"/>
+                            <constraint firstItem="Q0E-5v-qQt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v1F-a0-gax"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dJX-NW-iNj"/>
+                    <connections>
+                        <outlet property="progressLabel" destination="lLj-CQ-r8P" id="IEC-YV-FuD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R6I-az-f4g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5uE-qk-wUB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qsT-Zc-hVg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hlM-Sz-ilP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8X-o8-7Yx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>

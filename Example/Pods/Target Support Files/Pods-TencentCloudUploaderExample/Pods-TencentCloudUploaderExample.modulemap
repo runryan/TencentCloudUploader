@@ -1,6 +1,0 @@
-module Pods_TencentCloudUploaderExample {
-  umbrella header "Pods-TencentCloudUploaderExample-umbrella.h"
-
-  export *
-  module * { export * }
-}
