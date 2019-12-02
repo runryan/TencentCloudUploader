@@ -40,6 +40,6 @@ Pod::Spec.new do |s|
   s.libraries = 'c++'
   s.dependency 'AFNetworking'
   s.module_map = 'TencentCloudVideoUploader/TencentCloudVideoUploader.modulemap'
-  s.dependency 'SuperPlayer'
+  # s.dependency 'SuperPlayer'
   
 end
