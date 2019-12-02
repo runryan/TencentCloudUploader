@@ -9,15 +9,38 @@
 import UIKit
 import SwiftCommonTools2
 
+/**
+     Secrects.appID为敏感信息，上传git时自动过滤掉了；
+     这里需要自行创建Secrects.swift类，并在其中加入Int类型appId常量，如下：
+      ```
+      import Foundation
+      class Secrects {
+        public static let appID = xxx
+        public static let videoID = "xxx"
+        public static let userId = "xxx"
+      }
+      ```
+ */
 class ViewController: UIViewController {
 
     @IBOutlet weak var progressLabel: UILabel!
     private var videoID: String?
+    private var userId: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.videoID = Secrects.videoID
+        self.userId = Secrects.userId
     }
 
+    @IBAction func didClickUploadButton(_ sender: UIButton) {
+        let signature = "oHCOOjg8nTUGcxu/CPNNBZk8YuFzZWNyZXRJZD1BS0lEeG1NZmpZamZwejB3aEJoVU4wb1FSTkoxVmpoUXA4NW0mY3VycmVudFRpbWVTdGFtcD0xNTc1MDExOTUyJmV4cGlyZVRpbWU9MTU3NTA5ODM1MiZyYW5kb209MTU3NTA5ODM1Mg=="
+        uploadVideo(userID: "ryan", signature: signature)
+    }
+
+    @IBAction func didClickPlayButton(_ sender: UIButton) {
+        playVideo()
+    }
 
     /// [签名生成问的文档](https://cloud.tencent.com/document/product/266/9221)
     /// - Parameters:
@@ -37,20 +60,12 @@ class ViewController: UIViewController {
         param.videoPath = videoPath
         param.signature = signature
         param.enableHTTPS = true
+        param.enableResume = true
         publisher.delegate = self
         let resultCode = publisher.publishVideo(param)
         if resultCode == 0 {
             Log.e("视频上传失败retCode = \(resultCode)")
         }
-    }
-
-    @IBAction func didClickUploadButton(_ sender: UIButton) {
-        let signature = "oHCOOjg8nTUGcxu/CPNNBZk8YuFzZWNyZXRJZD1BS0lEeG1NZmpZamZwejB3aEJoVU4wb1FSTkoxVmpoUXA4NW0mY3VycmVudFRpbWVTdGFtcD0xNTc1MDExOTUyJmV4cGlyZVRpbWU9MTU3NTA5ODM1MiZyYW5kb209MTU3NTA5ODM1Mg=="
-        uploadVideo(userID: "ryan", signature: signature)
-    }
-
-    @IBAction func didClickPlayButton(_ sender: UIButton) {
-        playVideo()
     }
     
     func playVideo() {
@@ -75,6 +90,7 @@ extension ViewController: TXVideoPublishListener {
 
     func onPublishComplete(_ result: TXPublishResult!) {
         if let result = result {
+            self.videoID = result.videoId
             let des = "retCode=\(result.retCode), msg=\(result.descMsg ?? "")"
             let des2 = "videoId=\(result.videoId ?? ""), videoURL=\(result.videoURL ?? "")"
             Log.i("视频发布成功:\(des),\(des2)")
